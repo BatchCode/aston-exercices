@@ -1,0 +1,24 @@
+<div class="contain">
+        <h1>Welcome to Mr.Robot's Movies collection !</h1>
+    
+        <p>
+            This is a testing version.
+        </p>
+
+    <div class="row">
+        <div class="row__inner">
+
+            <div class="tile" *ngFor="let movie of MoviesList; let i = index">
+                <div class="tile__media">
+                    <img class="tile__img" src="https://image.tmdb.org/t/p/original{{ movie.poster_path }}" alt=""  />
+                </div>
+                <div class="tile__details">
+                    <div class="tile__title">
+                        {{ movie.title }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+</div>

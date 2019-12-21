@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row" *ngFor="let musique of playlist; let i = index ">
+        <div class="col-12" [ngClass]="{'bg-success': musique.likes > 0, 'bg-danger': musique.likes < 0}">
+            {{ musique.titre }} <br>
+            De {{ musique.artiste }} <br>
+            Nombre de likes: {{ musique.likes }} <br>
+            <button class="btn btn-primary" (click)="like(musique)">Like</button>
+            <button class="btn btn-warning" (click)="dislike(musique)">Dislike</button>
+            <button class="btn btn-danger" (click)="delete(i)">X</button>
+        </div>
+    </div>
+</div>

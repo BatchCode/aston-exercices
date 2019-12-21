@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row" *ngFor="let film of liste; let i = index">
+        <div class="col-12" [ngClass]="{'bg-success': film.like > 0, 'bg-danger': film.likes < 0}">
+            <div class="title"> {{ film.name }} </div>
+            <div class="realisator"> {{ film.realisator }} </div>
+            <div class="description"> {{ film.description }} </div>
+            <div class="likes"> {{ film.likes }} Likes </div>
+        
+            <button class="btn btn-primary" (click)='like(film)'>Like</button>
+            <button class="btn btn-warning" (click)='dislike(film)'>Dislike</button>
+            <button class="btn btn-danger" (click)='delete(i)'>X</button>
+
+            <div class="date"> {{ film.DateCreated }}</div>
+
+        </div>
+        <br><br>
+    </div>
+</div>

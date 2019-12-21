@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let weather of weatherData.weather">
+      {{ weatherData?.name  }} - {{ weatherData.weather?.description }} <br>
+      Il fait actuellement {{ weatherData?.main.temp - 273.15 | number: '1.0-1' }} degrés.
+    </ion-item>
+  </ion-list>
+</ion-content>
