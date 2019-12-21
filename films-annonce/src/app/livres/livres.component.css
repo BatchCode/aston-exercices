@@ -1,0 +1,28 @@
+.div-livres {
+    height: 500px;
+    width: 300px;
+    border: solid;
+    border-radius: 9px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    max-height: 500px;
+}
+
+img {
+    height: 200px;
+    widows: 250px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+
+.description {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+}

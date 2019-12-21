@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 border mt-5" *ngFor="let book of BooksList; let i = index" [ngClass]="{'bg-success': book.Like > 0, 'bg-danger': book.like < 0}">
+            <div class="title"> {{ book.name }} </div> <br>
+            <div class="description">{{ book.description }}</div> <br><br>
+            <img src="{{ book.img }}" /> <br><br>
+            <button class="btn btn-primary" (click)="like(book)">Like</button>
+            <button class="btn btn-warning" (click)="Dislike(book)">Dislike</button>
+            <button class="btn btn-danger" (click)="delete(i)">X</button>
+        </div>
+    </div>
+</div>

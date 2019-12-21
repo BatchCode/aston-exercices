@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab 3 - Add Tables
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #form="ngForm" (ngSubmit)="addTablesForm(form)">
+    <ion-item>
+      <ion-label>Table Name</ion-label>
+      <ion-input type="text" name="name" [(ngModel)]="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Table Price</ion-label>
+      <ion-input type="number" name="price" [(ngModel)]="price"></ion-input>
+    </ion-item>
+    <ion-button type="submit">Submit</ion-button>
+  </form>
+</ion-content>

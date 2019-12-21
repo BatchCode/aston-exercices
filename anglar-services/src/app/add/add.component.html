@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form (ngSubmit)="add(f)" #f="ngForm">
+                <label for="">Nom</label>
+                <input type="text" [(ngModel)]="name" name="name">
+                <label for="">Prix</label>
+                <input type="text" [(ngModel)]="price" name="price">
+                <label for="">Degré</label>
+                <input type="text" [(ngModel)]="degre" name="degre">
+                <button class="btn btn-primary" type="submit">Ok</button>
+            </form>
+        </div>
+    </div>
+</div>
